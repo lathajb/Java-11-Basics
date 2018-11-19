@@ -1,0 +1,31 @@
+package lambdaexpression;
+
+
+/***
+ * 
+ * Lambda expression is anonymous function which have set of parameters 
+ * and a lambda (->) and a function body .
+ * You can call it function without name.
+ * 
+ * 
+ * 
+ * 
+ * 
+ * @author janlatha
+ *
+ */
+public class LambdaExpression {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+
+public void lambdaPractice() {
+	
+	
+}

@@ -1,0 +1,13 @@
+package streamAPI;
+
+public class StreamAPIExplore2 {
+
+	
+	public static void main(String[] args) {
+		
+		
+		 final List<Integer> list = IntStream.range(1,100).boxed().collect(Collectors.toList());
+
+		 list.removeIf(number -> number % 2 == 0);
+	}
+}

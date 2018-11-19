@@ -1,0 +1,29 @@
+package string;
+
+public class StringPalindrom {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			char [] charArray = {'a','b','c','d','e','f'};
+			StringBuilder res = usingfor(charArray);
+			System.out.println(res.equals(new String(charArray)));
+			
+	}
+	
+	
+	public static StringBuilder usingfor(char [] stringArry) {
+		StringBuilder a = new StringBuilder();
+		String result = new String();
+		
+		for(int i = (stringArry.length-1) ;i >= 0 ;i--) {
+			System.out.println(stringArry[i]);
+			a.append(stringArry[i]);
+			System.out.println(a);	
+			
+			result += stringArry[i];
+			System.out.println("************" +result);
+		}
+		return a;
+	}
+
+}

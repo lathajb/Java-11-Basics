@@ -1,0 +1,17 @@
+package string;
+
+public class StringBasics {
+
+	public static void main(String[] args) {
+		
+		isStringKeyWord();
+		
+
+	}
+	
+	public static void isStringKeyWord() {
+		String String = "one";
+		System.out.println(String);
+	}
+
+}

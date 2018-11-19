@@ -1,0 +1,69 @@
+package string;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+public class StringCharacterOccurance {
+
+	public static void main(String[] args) {
+
+
+		char [] originalCharArray = {'a','b','c','d','e','a','c'};
+		
+		Map<Character,Integer> mapCount = new HashMap<Character,Integer>();
+		
+		
+		for(char eachChar : originalCharArray) {
+			
+			if(mapCount.containsKey(eachChar)) {
+				mapCount.put(eachChar, mapCount.get(eachChar)+1);
+			}else {
+				mapCount.put(eachChar, 1);				
+		    }  
+			
+		}
+		
+//		mapCount.entrySet().stream()
+//	      .forEach(e -> System.out.println(e.getKey() + ":" + e.getValue()));
+		
+		repeatedCount();
+		
+	}
+	
+	
+	public static void repeatedCount() {
+		
+		 String text = "a r b k c d se f g a d f s s f d s ft gh f ws w f v x s g h d h j j k f sd j e wed a d f";
+		 
+		 String[] stringArr = text.split(" ");
+		 
+		 List<String> listOfArray = Arrays.asList(text.split(" "));
+		 
+		 Set<String> set = new HashSet<String>(listOfArray);
+		 
+		  //set.stream().collect(Collectors.toList()).forEach(e -> System.out.println(e));
+		  
+		  for (String word : set) {
+	            System.out.println(word + ": " + Collections.frequency(set, word));
+	       }
+		  //listOfArray.stream().collect(Collectors.toList()).forEach(e -> System.out.println(e));
+		 
+//		  for(String ele :set) {
+//			  System.out.println(Collections.frequency(set, ele));
+//		  }
+//		  
+//		  
+//		  Map map= listOfArray.stream().map(x -> x).collect(Collectors.toMap(x -> x,x-> Collections.frequency(set, x), (oldValue,newValue) -> newValue));
+//		 
+//		  map.entrySet().stream().forEach(e -> System.out.println(e));
+		  
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+package string;
+
+public class StringBasics {
+
+	public static void main(String[] args) {
+		
+		isStringKeyWord();
+		System.out.println("======================================================");
+		System.out.println(internUsage());
+		
+
+	}
+	
+	public static void isStringKeyWord() {
+		String String = "one";
+		System.out.println(String);
+	}
+	
+	public static boolean internUsage() {
+		String one = "two";
+		String two = new String("two1");
+		return one.intern() == two.intern();
+	}
+
+}

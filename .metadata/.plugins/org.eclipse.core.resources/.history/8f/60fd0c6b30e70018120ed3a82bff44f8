@@ -1,0 +1,36 @@
+package Exceptions;
+
+public class ExceptionExploreWithReturn {
+
+	public static void main(String[] args) {
+		System.out.println(testExceptionReturn());
+	}
+	
+	public static int testExceptionReturn() {
+		 		try{
+		        int c=10;
+		        return c;
+		        } catch(Exception e){
+		             return 0;
+		        } finally{
+		            return 3;
+		        }
+	}
+	
+	
+	public static int artimaticException() {
+		int result = 0;
+		try {
+			result = 18/0;
+		}catch(ArithmeticException ae) {
+			System.out.println(ae.getMessage());
+		}finally{
+			System.out.println("from finally :" + result);
+			return result;
+		}
+		
+		System.out.println("End of the method");
+		
+	}
+
+}

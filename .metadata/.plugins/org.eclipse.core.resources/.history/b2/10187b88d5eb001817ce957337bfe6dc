@@ -1,0 +1,22 @@
+package string;
+
+public class StringPalindrom {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			char [] charArray = {'a','b','c','d','e','f'};
+			usingfor(charArray);
+	}
+	
+	
+	public static void usingfor(char [] stringArry) {
+		
+		String a = new String(stringArry);
+		
+		for(int i = a.length();i >= 0 ;i--) {
+			System.out.println(a[i]);
+		}
+		
+	}
+
+}

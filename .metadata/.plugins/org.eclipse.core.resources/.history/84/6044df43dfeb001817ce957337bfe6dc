@@ -1,0 +1,34 @@
+package string;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class StringCharacterOccurance {
+
+	public static void main(String[] args) {
+
+
+		char [] originalCharArray = {'a','b','c','d','e','a','c'};
+		
+		Map<Character,Integer> mapCount = new HashMap<Character,Integer>();
+		
+		
+		for(char eachChar : originalCharArray) {
+			
+			if(mapCount.containsValue(eachChar)) {
+				mapCount.put(eachChar, 1+ mapCount.get(eachChar));
+			}else {
+				mapCount.put(eachChar, 1);			
+				
+		    }
+		    
+			
+		}
+		
+		
+		
+		
+
+	}
+
+}

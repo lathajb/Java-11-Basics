@@ -1,0 +1,20 @@
+package Exceptions;
+
+public class ExceptionExploreWithReturn {
+
+	public static void main(String[] args) {
+		System.out.println(testExceptionReturn());
+	}
+	
+	public static int testExceptionReturn() {
+		 try{
+		        int c=10;
+		        return c;
+		        } catch(Exception e){
+		             return 0;
+		        } finally{
+		            return 3;
+		        }
+	}
+
+}

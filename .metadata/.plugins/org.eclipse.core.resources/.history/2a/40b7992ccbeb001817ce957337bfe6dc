@@ -1,0 +1,24 @@
+package string;
+
+public class StringBasics {
+
+	public static void main(String[] args) {
+		
+		isStringKeyWord();
+		System.out.println("======================================================");
+		internUsage();
+		
+
+	}
+	
+	public static void isStringKeyWord() {
+		String String = "one";
+		System.out.println(String);
+	}
+	
+	public static void internUsage() {
+		String String = "one";
+		System.out.println(String);
+	}
+
+}

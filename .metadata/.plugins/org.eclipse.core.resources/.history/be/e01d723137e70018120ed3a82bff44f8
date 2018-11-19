@@ -1,0 +1,29 @@
+package Exceptions;
+
+public class NestedTryBlocks {
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+	}
+	
+	
+	public int nestedTryBlock() {
+		try {
+			  try {
+			    throw new Error("oops");
+			  }
+			  finally {
+			   
+			    System.out.println("finally");
+			  }
+			}catch (Exception ex) {
+				 
+				System.out.println("outer", ex.getMessage());
+			  
+			}
+	}
+
+}

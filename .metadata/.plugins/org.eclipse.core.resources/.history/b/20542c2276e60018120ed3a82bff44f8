@@ -1,0 +1,10 @@
+
+
+============================================================================
+
+What is functional programming?
+
+It is a popular programming paradigms, which does computation with out 
+changing the state and mutating data.
+
+Eg: Scala , Haskell, Erlang
