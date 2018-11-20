@@ -9,7 +9,6 @@ public class SwapTwoNumbersWithOutTemp {
        
        a = a + b;
        b = a - b;
-       
        a = a -b;
 		
        System.out.println(a);
